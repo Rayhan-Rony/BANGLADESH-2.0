@@ -4,9 +4,11 @@
   padding: 0;
 }
 body {
-  width: 1280px;
+  /* width: 1350px; */
+  width: 71%;
   margin: auto;
   font-family: Fira Sans;
+  background-color: #f5f5f5;
 }
 /* hero section  */
 #hero-section {
@@ -44,26 +46,28 @@ body {
 }
 
 /* future section  */
-#future-section {
+#future-section,
+#news-section {
   margin-top: 80px;
 }
 
-#future-section .future-section-title {
+#future-section .future-section-title,
+#news-section .news-section-title {
   color: rgb(14, 14, 14);
   font-size: 40px;
   font-weight: 700;
   line-height: 48px;
 }
-#future-section .future-section-subtitle {
+#future-section .future-section-subtitle,
+#news-section .news-section-subtitle {
   color: rgba(14, 14, 14, 0.7);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  margin-top: 24px;
+  margin: 24px 0 32px 0;
 }
 
 #future-section .card-group {
-  margin-top: 32px;
   display: flex;
   gap: 24px;
 }
@@ -120,4 +124,66 @@ body {
   border-radius: 8px;
 
   background: rgb(255, 194, 57);
+}
+/* news section  */
+
+/* #news-section .news-section-title {
+  color: rgb(14, 14, 14);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+}
+#news-section .news-section-subtitle {
+  color: rgba(14, 14, 14, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+} */
+
+#news-section .news-container {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+#news-section .news-content-container {
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 56px 48px;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+}
+#news-section .news-title {
+  color: rgba(14, 14, 14, 0.8);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+}
+#news-section .date-time {
+  color: rgba(14, 14, 14, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+#news-section .news-details {
+  color: rgba(14, 14, 14, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 12px 0 32px 0;
+}
+#news-section .news-btn {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  padding: 13px 26px;
+  border: none;
+  border-radius: 8px;
+  background: rgb(0, 106, 80);
+}
+#news-section .second-news {
+  flex-direction: row-reverse;
 }
