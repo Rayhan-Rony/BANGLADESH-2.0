@@ -48,13 +48,15 @@ body {
 /* future section  */
 #future-section,
 #news-section,
-#donate-section {
+#donate-section,
+#subscribe-section {
   margin-top: 80px;
 }
 
 #future-section .future-section-title,
 #news-section .news-section-title,
-#donate-section .donate-section-title {
+#donate-section .donate-section-title,
+#subscribe-section .subscribe-section-title {
   color: rgb(14, 14, 14);
   font-size: 40px;
   font-weight: 700;
@@ -62,7 +64,8 @@ body {
 }
 #future-section .future-section-subtitle,
 #news-section .news-section-subtitle,
-#donate-section .donate-section-subtitle {
+#donate-section .donate-section-subtitle,
+#subscribe-section .subscribe-section-subtitle {
   color: rgba(14, 14, 14, 0.7);
   font-size: 16px;
   font-weight: 400;
@@ -238,4 +241,51 @@ body {
   box-sizing: border-box;
   border: 1px solid rgba(14, 14, 14, 0.1);
   border-radius: 8px;
+}
+
+/* subscribe section  */
+#subscribe-section {
+  border-radius: 24px;
+  background: rgb(198, 228, 214);
+  padding: 80px 100px;
+}
+#subscribe-section .subscribe-section-email-info {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 25px;
+  flex-direction: column;
+}
+#subscribe-section .subscribe-section-email-info p {
+  text-align: center;
+}
+#subscribe-section .subscribe-section-email-info p > input {
+  width: 60%;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 8px 0px 0px 8px;
+}
+#subscribe-section .subscribe-section-email-info p > input::placeholder {
+  color: rgba(14, 14, 14, 0.3);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+#subscribe-section .subscribe-section-email-info .subscribe-btn {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  border-radius: 0px 8px 8px 0px;
+  background: rgb(0, 106, 80);
+  padding: 17px 34px;
+  border: none;
+  margin-left: -3px;
+}
+
+#subscribe-section .subscribe-section-email-info .message {
+  color: rgba(14, 14, 14, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
 }
